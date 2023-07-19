@@ -13,7 +13,7 @@
    
 </head>
 <script >
-function Submit() {
+function validateForm() {
   member = {};
   member["firstName"] = document.getElementById("firstName").value;
   member["lastName"] = document.getElementById("lastName").value;
@@ -196,6 +196,16 @@ function into() {
                     
                             
                         </div> 
+<form name="myForm">
+  First Name: <input type="text" id="fname">
+  <br/>
+  Last Name: <input type="text" id="lname">
+  <br/> email: <input type="text" id="email">
+  <br/> Password: <input type="password" id="pass">
+  <br/>
+  <button onclick="validateForm()">Submit</button>
+</form>
+
                 
     </body>
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-image: url("tech2.jpg");
+          
+        }
+        body:background-image{
+            opacity: 0.5;
+        }
+    
+        form {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin: 5px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+    
+        button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+      </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="javascript" type="text/javascript" href="validate.js">
+<body>
+    <form name="myForm">
+        First Name: <input type="text" id="fname">
+        <br/>
+        Last Name: <input type="text" id="lname">
+        <br/> email: <input type="text" id="email">
+        <br/> Password: <input type="password" id="pass">
+        <br/>
+        <button onclick="validateForm()">Submit</button>
+      </form>
+</body>
+</html>

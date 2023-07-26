@@ -1,0 +1,31 @@
+.navcontainer{
+    margin:auto;
+    max-width:100%;
+    display:block;
+    text-align: center;
+    padding:5px;
+
+}
+.navcontainer ul{
+   list-style-type: none;
+   margin:2px;
+   padding:0;
+   
+   text-align: center;
+   
+
+}
+.navcontainer li{
+    display: inline;
+    margin-right:150px;
+}
+.navcontainer li a:hover{
+    color:rgb(92, 31, 92);
+    
+}
+
+.logo img{
+    height:60px;
+    margin-right: auto;
+   
+}

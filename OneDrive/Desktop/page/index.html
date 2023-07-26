@@ -12,69 +12,7 @@
     <link rel="stylesheet"  href="style.css">
    
 </head>
-<script >
-function validateForm() {
-  member = {};
-  member["firstName"] = document.getElementById("firstName").value;
-  member["lastName"] = document.getElementById("lastName").value;
-  member["password"] = document.getElementById("password").value;
-  member["confirmPassword"] = document.getElementById("confirmPassword").value;
-  member["email"] = document.getElementById("email").value;
-  member["gender"] = readRadio(document.getElementsByName("gender"));
-  member["pref"] = document.getElementById("service").value;
-  agree = document.getElementById("agree").checked;
-  if (member["password"] != member["confirmPassword"]) {
-    alert("passwords do not match");
-    return;
-  }
-  if (!validateEmail(member["email"])) {
-    alert("Please enter a valid email address");
-    return;
-  }
-  if (!agree) {
-    alert(
-      "Please confirm if you are in agrement with Alphajiri's terms and conditions"
-    );
-    return;
-  }
-  var a = confirm(
-    "Hello " +
-      member["firstName"] +
-      " " +
-      member["lastName"] +
-      " \n" +
-      member["email"] +
-      " -" +
-      member["pref"] +
-      "\n" +
-      " you have registered successfully\nReturn to home page"
-  );
 
-  if (a) {
-    location.assign("index.html");
-    into(member["firstName"] + " " + member["lastName"]);
-  }
-}
-function validateEmail(email) {
-  var regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(\.\w{2,3})+$/;
-  return regex.test(email);
-}
-
-function readRadio(ele) {
-  for (i = 0; i < ele.length; i++) {
-    if (ele[i].checked) {
-      return ele[i].value;
-    }
-  }
-}
-function into() {
-  a = "hsxfbubdbgtvcefgfh"
-  alert("Clicked " + a);
-  document.getElementById("hold").innerHTML =
-    '<img src="assets/images/pass4.jpg" class="meImg" >' + a;
-}
-
-</script>
     <body  style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #333333;">
         
 
@@ -84,11 +22,11 @@ function into() {
                     
 
                     <ul>
-                        <li><a href="about.html"></a>about</li>
-                        <li><a href="type.html"></a>type</li>
-                        <li><a href="characters.html"></a>characters</li>
-                        <li><a href="power.html"></a>power</li>
-                        <li><a href="forms.html"></a>sign up</li>
+                        <li><a href="about.html">about</li></a>
+                        <li><a href="type.html">type</li></a>
+                        <li><a href="characters.html">characters</li></a>
+                        <li><a href="power.html">power</li></a>
+                        <li><a href="forms.html">sign up</li></a>
 
                         
                     </ul>

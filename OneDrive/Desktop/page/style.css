@@ -13,6 +13,13 @@ body{
     
     
 }
+nav a{
+    color:#fff;
+    text-decoration:none;
+    padding :10px 20px;
+
+}
+
 .containernav{
     background-color: lightblue;
     padding: 10px;

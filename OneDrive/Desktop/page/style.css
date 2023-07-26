@@ -122,11 +122,10 @@ nav a{
     left: 100%;
     width: calc(100% - 20px);
     
-    opacity: 0;
-    visibility: hid;
+    
     overflow: auto;
     padding: 10px;
-    transition: opacity 0.3s ease;
+    
   }
 
   .image-container:hover .content {
